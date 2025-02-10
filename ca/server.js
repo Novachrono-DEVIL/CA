@@ -6,11 +6,11 @@ const cors= require('cors')
 app.use(cors())
 app.use(express.json())
 
-app.get('/',(res,req)=>{
+app.get('/',(req,res)=>{
     app.send("Welcome")
 })
 
-app.post('/signup',(res,req)=>{
+app.post('/info',(req,res)=>{
     try {
         const{Username,Email,Password,DateofBirth}=req.body
         if(!Username)
