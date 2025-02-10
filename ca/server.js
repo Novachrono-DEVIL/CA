@@ -7,7 +7,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/',(req,res)=>{
-    app.send("Welcome")
+    res.send("Welcome")
 })
 
 app.post('/info',(req,res)=>{
